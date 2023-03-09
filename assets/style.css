@@ -6,7 +6,7 @@
 
 :root{
     --bg-nav: black;
-    --bg-footer: lightgrey;
+    --bg-footer: rgba(34,34,34,255);
     --font-size: 14px;
     --height-navbar: 2rem;
 }
@@ -26,13 +26,6 @@ html{
 
 body {
 	/* margin-top: var(--height-navbar); */
-}
-
-a {
-	text-decoration: none;
-    background-color: grey;
-    border-radius: 4px;
-    padding: 0.2em;
 }
 
 /* Nav top */
@@ -65,13 +58,19 @@ nav li{
 
 nav a{
     color: white;
+    text-decoration: none;
+    background-color: grey;
+    border-radius: 4px;
+    padding: 0.2em;
 }
+
 
 /* Big Container img */
 
 main{
     padding-top: 2rem;
     padding-bottom: 2rem;
+    padding-inline: 3rem;
     background-color: black;
 }
 
@@ -83,8 +82,8 @@ main .container{
 
 .box{
     flex:0 0 calc(100% / 7);
-    padding: 1rem .5rem;
-    border: 3px solid red;
+    padding: 1rem .2rem;
+    border: 1px solid red;
 
 }
 
@@ -124,5 +123,85 @@ main .container{
 .box .tag-name{
     background-color: rgb(248, 247, 247, 0.212);
 }
+
+/* footer */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(34, 34, 34);
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+footer .icon-big{
+    color: white;
+    font-size: 30px;
+}
+
+.icon-footer-start{
+    display: flex;
+    justify-content: flex-start;
+    position: relative; 
+}
+
+ .arrow-up{
+    height: 20px;
+    position: relative;
+    top: 25px;
+   
+   
+}
+
+.button {
+   height: 50px;
+   width: 50px;
+   flex-direction: column;
+   padding-left: 10px;
+   display: flex;
+   justify-content: space-between;
+}
+h3{
+   color: white;
+   font-size: 13px;
+   width: 150px; 
+}
+.icon-footer-center{
+    display: flex;
+    
+}
+
+.icon4{
+    height: 30px;
+    width: 30px;
+   
+}
+.button-large{
+    width: 150px;
+}
+
+.icon-junior{
+    height: 30px;
+}
+
+.button-large2{
+    width: 150px;
+}
+
+.button-end{
+    height: 100%;
+    
+    background-color: #4a4a4a;
+}
+ h2{
+    height: 100%;
+    color: red;
+ }
+
+
+
 
 

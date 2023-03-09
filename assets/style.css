@@ -83,7 +83,7 @@ main .container{
 .box{
     flex:0 0 calc(100% / 7);
     padding: 1rem .2rem;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
 }
 
@@ -152,9 +152,10 @@ footer .icon-big{
 }
 
  .arrow-up{
-    height: 20px;
-    position: relative;
-    top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
    
    
 }
@@ -195,14 +196,18 @@ h3{
 }
 
 .button-end{
-    height: 100%;
-    
-    background-color: #4a4a4a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(136, 132, 132);
+
 }
  h2{
     height: 100%;
     color: red;
  }
+
+
 
 
 
